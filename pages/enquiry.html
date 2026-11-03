@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiry | Check Collection Cost and Availability - Ngobeni Chain Supply</title>
+  <meta name="description" content="Enquire about used cooking oil or animal fat collection and get an instant estimate of cost and the earliest available collection date from Ngobeni Chain Supply.">
+  <meta name="keywords" content="oil collection enquiry, collection cost estimate, collection availability, fat transport enquiry, B2B">
+  <meta name="author" content="Ngobeni Chain Supply">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0f3d2e">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ngobeni Chain Supply">
+  <meta property="og:title" content="Enquiry | Check Collection Cost and Availability - Ngobeni Chain Supply">
+  <meta property="og:description" content="Enquire about used cooking oil or animal fat collection and get an instant estimate of cost and the earliest available collection date from Ngobeni Chain Supply.">
+  <meta property="og:locale" content="en_ZA">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/forms.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="brand"><div><h1>Ngobeni Chain Supply</h1><p class="tagline">Check cost and availability</p></div></div>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="suppliers.html">Suppliers</a></li>
+        <li><a href="industrial-customers.html">Industrial Customers</a></li>
+        <li><a href="quote.html">Request a Quote</a></li><li><a class="active" href="enquiry.html">Enquiry</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="page-title">
+      <h2>Enquiry</h2>
+      <p class="enquiry-intro">Tell us what you need and get an instant estimate of the cost and the earliest available collection date. This is for enquiries about collection, transport and industrial supply.</p>
+    </section>
+    <section class="content grid two">
+      <div>
+        <h2>How the enquiry works</h2>
+        <ol>
+          <li>Fill in the form. Every field marked <span class="required-mark">*</span> is required.</li>
+          <li>The form is checked as you type and again when you press the button.</li>
+          <li>Your details are processed and we show an estimate and the earliest collection date.</li>
+          <li>You can confirm the enquiry by e-mail or ask for a formal quote.</li>
+        </ol>
+        <div class="note">
+          <h3>Please note</h3>
+          <p>The prices and dates shown are indicative prototype estimates for this student project. A final price is always confirmed in a written quotation.</p>
+        </div>
+      </div>
+      <form class="form" id="enquiry-form" action="enquiry.html" method="get" data-form="enquiry" data-rates="../data/rates.json" novalidate>
+        <label for="name">Full name <span class="required-mark" aria-hidden="true">*</span></label>
+        <input id="name" name="name" type="text" required aria-describedby="name-error" minlength="2" maxlength="80" autocomplete="name">
+        <span class="field-error" id="name-error" aria-live="polite"></span>
+        <label for="company">Business name</label>
+        <input id="company" name="company" type="text" aria-describedby="company-error" maxlength="100" autocomplete="organization">
+        <span class="field-error" id="company-error" aria-live="polite"></span>
+        <label for="email">E-mail address <span class="required-mark" aria-hidden="true">*</span></label>
+        <input id="email" name="email" type="email" required aria-describedby="email-error" maxlength="120" autocomplete="email">
+        <span class="field-error" id="email-error" aria-live="polite"></span>
+        <label for="phone">Telephone number <span class="required-mark" aria-hidden="true">*</span><span class="hint" id="phone-hint">South African number, e.g. 067 140 2467 or +27 67 140 2467</span></label>
+        <input id="phone" name="phone" type="tel" required aria-describedby="phone-error phone-hint" inputmode="tel" autocomplete="tel" placeholder="e.g. 067 140 2467">
+        <span class="field-error" id="phone-error" aria-live="polite"></span>
+        <label for="service">Service you are enquiring about <span class="required-mark" aria-hidden="true">*</span></label>
+        <select id="service" name="service" required aria-describedby="service-error"><option value="">Choose a service...</option><option value="collection">Used cooking oil collection</option><option value="fat">Animal fat collection</option><option value="transport">Safe transportation</option><option value="industrial">Industrial supply enquiry</option><option value="quote">General quotation</option></select>
+        <span class="field-error" id="service-error" aria-live="polite"></span>
+        <fieldset>
+          <legend>Type of material <span class="required-mark" aria-hidden="true">*</span></legend>
+          <label class="choice"><input type="radio" name="material" value="Used cooking oil" required> Used cooking oil</label>
+          <label class="choice"><input type="radio" name="material" value="Animal fat"> Animal fat</label>
+          <label class="choice"><input type="radio" name="material" value="Both oil and fat"> Both oil and fat</label>
+          <span class="field-error" aria-live="polite"></span>
+        </fieldset>
+        <label for="quantity">Estimated quantity (kg) <span class="required-mark" aria-hidden="true">*</span><span class="hint" id="quantity-hint">Between 1 kg and 20 000 kg</span></label>
+        <input id="quantity" name="quantity" type="number" required aria-describedby="quantity-error quantity-hint" min="1" max="20000" step="1" inputmode="numeric" placeholder="e.g. 200">
+        <span class="field-error" id="quantity-error" aria-live="polite"></span>
+        <label for="region">Collection region <span class="required-mark" aria-hidden="true">*</span></label>
+        <select id="region" name="region" required aria-describedby="region-error"><option value="">Choose a region...</option><option value="gauteng">Gauteng</option><option value="kzn">KwaZulu-Natal</option><option value="wc">Western Cape</option><option value="other">Other province</option></select>
+        <span class="field-error" id="region-error" aria-live="polite"></span>
+        <label for="date">Preferred collection date <span class="required-mark" aria-hidden="true">*</span><span class="hint" id="date-hint">Today or later, within the next 180 days</span></label>
+        <input id="date" name="date" type="date" required aria-describedby="date-error date-hint" data-future-only data-max-days="180">
+        <span class="field-error" id="date-error" aria-live="polite"></span>
+        <fieldset>
+          <legend>How soon do you need this? <span class="required-mark" aria-hidden="true">*</span></legend>
+          <label class="choice"><input type="radio" name="urgency" value="standard" required> Standard</label>
+          <label class="choice"><input type="radio" name="urgency" value="priority"> Priority (about 30% extra)</label>
+          <span class="field-error" aria-live="polite"></span>
+        </fieldset>
+        <label for="details">Extra details<span class="hint" id="details-hint">Optional. At least 10 characters if you add a note.</span></label>
+        <textarea id="details" name="details" rows="4" aria-describedby="details-error details-hint" maxlength="500" data-minlength="10"></textarea>
+        <span class="field-error" id="details-error" aria-live="polite"></span>
+        <span class="char-count" id="details-count" aria-hidden="true">0 / 500 characters</span>
+        <label class="choice" for="consent"><input id="consent" name="consent" type="checkbox" required aria-describedby="consent-error"> I agree that Ngobeni Chain Supply may use these details to reply to me.</label>
+        <span class="field-error" id="consent-error" aria-live="polite"></span>
+        <button class="button" type="submit">Check cost and availability</button>
+        <div class="form-status" hidden aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+<footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h2>Ngobeni Chain Supply</h2>
+        <p>Reliable fats and used cooking oil collection for business partners in South Africa.</p>
+      </div>
+      <ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="suppliers.html">Suppliers</a></li><li><a href="enquiry.html">Enquiry</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li><li><a href="../index.html">Home</a></li></ul>
+    </div>
+    <p>&copy; 2026 Ngobeni Chain Supply.</p>
+  </footer></body>
+</html>

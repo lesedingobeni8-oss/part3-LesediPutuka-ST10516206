@@ -1,0 +1,10 @@
+# Security headers (used automatically by Netlify; ignored by GitHub Pages)
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Long cache for static assets to improve page speed
+/assets/*
+  Cache-Control: public, max-age=604800

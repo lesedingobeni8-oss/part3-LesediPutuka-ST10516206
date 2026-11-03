@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supplier Collection Request | Restaurants, Hotels &amp; Butcheries - Ngobeni Chain Supply</title>
+  <meta name="description" content="Restaurants, hotels, caterers and butcheries can request collection of used cooking oil or animal fats from Ngobeni Chain Supply using this simple supplier form.">
+  <meta name="keywords" content="request used oil collection, restaurant oil collection, butchery fat collection, hotel cooking oil recycling, supplier form">
+  <meta name="author" content="Ngobeni Chain Supply">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0f3d2e">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ngobeni Chain Supply">
+  <meta property="og:title" content="Supplier Collection Request | Restaurants, Hotels &amp; Butcheries - Ngobeni Chain Supply">
+  <meta property="og:description" content="Restaurants, hotels, caterers and butcheries can request collection of used cooking oil or animal fats from Ngobeni Chain Supply using this simple supplier form.">
+  <meta property="og:locale" content="en_ZA">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/forms.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="brand"><div><h1>Ngobeni Chain Supply</h1><p class="tagline">Collection requests for suppliers</p></div></div>
+    <nav aria-label="Main navigation"><ul class="nav-list"><li><a href="../index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a class="active" href="suppliers.html">Suppliers</a></li><li><a href="industrial-customers.html">Industrial Customers</a></li><li><a href="quote.html">Request a Quote</a></li><li><a href="enquiry.html">Enquiry</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  </header>
+  <main id="main">
+    <section class="page-title"><h2>Supplier Collection Request</h2><p>This page is for businesses that have used cooking oil or fats available for collection.</p></section>
+    <section class="content grid two">
+      <div>
+        <h2>Who can use this service?</h2>
+        <p>Potential suppliers include restaurants, hotels, catering businesses, food-processing companies and butcheries. The goal is to make it easier for these businesses to contact NCS instead of relying only on informal communication.</p>
+      <div class="section">
+        <button type="button" class="button secondary" data-modal-open="safety-modal" style="border:0;cursor:pointer;font:inherit;font-weight:bold">View container and safety guidelines</button>
+      </div>
+      <dialog class="modal" id="safety-modal" aria-labelledby="safety-modal-title">
+        <div class="modal-head">
+          <h2 id="safety-modal-title">Container and safety guidelines</h2>
+          <button type="button" class="modal-close" data-modal-close aria-label="Close dialog">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>To make collection safe and quick, please prepare your material like this:</p>
+          <ul>
+            <li>Let used cooking oil cool completely before pouring it into a container.</li>
+            <li>Use sealed, leak-proof containers and keep different materials separate.</li>
+            <li>Keep the containers in a clean, easy-to-reach place for the collection team.</li>
+            <li>Do not mix oil with water, chemicals or food waste.</li>
+            <li>Label each container with the material type and approximate quantity.</li>
+          </ul>
+        </div>
+        <div class="modal-foot"><button type="button" class="button" data-modal-close style="border:0;cursor:pointer;font:inherit;font-weight:bold">Got it</button></div>
+      </dialog>
+      </div>
+      <form class="form" action="mailto:info@ngobenichainsupply.co.za" method="post" enctype="text/plain" data-form="email" data-subject="Supplier collection request" data-heading="Your collection request is ready to send" novalidate>
+        <!-- This form shows the fields that would be needed in the final website. -->
+        <label for="business">Business name <span class="required-mark" aria-hidden="true">*</span></label>
+        <input id="business" name="business" type="text" required aria-describedby="business-error" minlength="2" maxlength="100" autocomplete="organization">
+        <span class="field-error" id="business-error" aria-live="polite"></span>
+        <label for="person">Contact person <span class="required-mark" aria-hidden="true">*</span></label>
+        <input id="person" name="person" type="text" required aria-describedby="person-error" minlength="2" maxlength="80" autocomplete="name">
+        <span class="field-error" id="person-error" aria-live="polite"></span>
+        <label for="email">E-mail address <span class="required-mark" aria-hidden="true">*</span></label>
+        <input id="email" name="email" type="email" required aria-describedby="email-error" maxlength="120" autocomplete="email">
+        <span class="field-error" id="email-error" aria-live="polite"></span>
+        <label for="phone">Telephone number <span class="required-mark" aria-hidden="true">*</span><span class="hint" id="phone-hint">South African number, e.g. 067 140 2467</span></label>
+        <input id="phone" name="phone" type="tel" required aria-describedby="phone-error phone-hint" inputmode="tel" autocomplete="tel" placeholder="e.g. 067 140 2467">
+        <span class="field-error" id="phone-error" aria-live="polite"></span>
+        <label for="material">Material type <span class="required-mark" aria-hidden="true">*</span></label>
+        <select id="material" name="material" required aria-describedby="material-error"><option value="Used cooking oil">Used cooking oil</option><option value="Animal fats">Animal fats</option><option value="Both">Both</option><option value="Dirty Fat">Dirty Fat</option><option value="Body Fat">Body Fat</option><option value="Clean Fat">Clean Fat</option></select>
+        <span class="field-error" id="material-error" aria-live="polite"></span>
+        <label for="quantity">Estimated quantity <span class="required-mark" aria-hidden="true">*</span></label>
+        <input id="quantity" name="quantity" type="text" required aria-describedby="quantity-error" maxlength="30" placeholder="Example: 50 (Kg)" data-pattern="^\d+([.,]\d+)?\s*([kK][gG]|[lL])?(\s*\(.*\))?$" data-pattern-message="Enter a quantity such as 50, 50 kg or 50 (Kg).">
+        <span class="field-error" id="quantity-error" aria-live="polite"></span>
+        <label for="collection-date">Preferred collection date<span class="hint" id="collection-date-hint">Optional</span></label>
+        <input id="collection-date" name="collection-date" type="date" aria-describedby="collection-date-error collection-date-hint" data-future-only data-max-days="180">
+        <span class="field-error" id="collection-date-error" aria-live="polite"></span>
+        <label for="location">Collection location <span class="required-mark" aria-hidden="true">*</span></label>
+        <textarea id="location" name="location" rows="3" required aria-describedby="location-error" minlength="5" maxlength="300"></textarea>
+        <span class="field-error" id="location-error" aria-live="polite"></span>
+        <span class="char-count" id="location-count" aria-hidden="true">0 / 300 characters</span>
+        <label class="choice" for="supplier-consent"><input id="supplier-consent" name="supplier-consent" type="checkbox" required aria-describedby="supplier-consent-error"> I agree that Ngobeni Chain Supply may use these details to reply to me.</label>
+        <span class="field-error" id="supplier-consent-error" aria-live="polite"></span>
+        <button class="button" type="submit">Submit Request</button>
+        <div class="form-status" hidden aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+<footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h2>Ngobeni Chain Supply</h2>
+        <p>Reliable fats and used cooking oil collection for business partners in South Africa.</p>
+      </div>
+      <ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="suppliers.html">Suppliers</a></li><li><a href="enquiry.html">Enquiry</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li><li><a href="../index.html">Home</a></li></ul>
+    </div>
+    <p>&copy; 2026 Ngobeni Chain Supply.</p>
+  </footer>
+</body>
+</html>
